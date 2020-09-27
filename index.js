@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
  
 (async function() {
 
-    const result = await fetch('https://jobs.github.com/positions.json?description=python&location=new+york');
+    const result = await fetch('https://jobs.github.com/positions.json?&location=remote');
     const json = await result.json();
 
     const rows = json.map(job => {
