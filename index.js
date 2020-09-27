@@ -19,6 +19,8 @@ const fetch = require('node-fetch');
 
     const sheet = new Sheet();
     await sheet.load();
+
+    await sheet.addRows(rows)
     
     
 })()
